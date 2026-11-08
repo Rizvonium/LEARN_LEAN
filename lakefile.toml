@@ -1,0 +1,5 @@
+name = "LearnLean"
+defaultTargets = ["LearnLean"]
+
+[[lean_lib]]
+name = "LearnLean"
