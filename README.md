@@ -28,20 +28,24 @@ Open <https://live.lean-lang.org>, paste in a lesson file, and click any `#eval`
 3. Clone this repo, open the folder in VS Code, and open a lesson file.
 4. Open the infoview with `Ctrl+Shift+Enter` (`Cmd+Shift+Enter` on a Mac).
 
-## Roadmap
+## Roadmap (aimed at formalizing theorems)
 
-| # | Topic | FPIL | TPIL |
-|---|-------|------|------|
-| 01 | Expressions, types, definitions, functions | 1.1–1.3 | 2.1–2.4 |
-| 02 | Structures and pattern matching | 1.4–1.5 | — |
-| 03 | Polymorphism, `variable`, sections, namespaces | 1.6 | 2.5–2.8 |
-| 04 | Dependent types, Prop, propositions as types | — | 2.9, 3.1–3.2 |
-| 05 | Propositional logic proofs (∧ ∨ → ¬ ↔) | — | 3.3–3.6 |
-| 06 | Quantifiers and equality (∀ ∃ =) | — | 4 |
-| 07 | Tactics | — | 5 |
-| 08 | Hello, World! I/O and programs | 2 | — |
-| 09 | Inductive types and recursion | 1.5, 3 | 7–8 |
-| 10 | Type classes | 4 | 10 |
-| … | Monads, structures, induction proofs | 5+ | 6, 9+ |
+The goal is to formalize mathematics. Theorem Proving in Lean is the main text.
+Functional Programming in Lean comes in only where proofs need it. From Lesson 07 on we
+add Mathlib, Lean's library of formalized mathematics, and its companion book
+[Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/).
 
-Progress: ✅ Lesson 01
+| # | Topic | Source |
+|---|-------|--------|
+| 01 | Expressions, types, definitions, functions | FPIL 1.1–1.3, TPIL 2.1–2.4 |
+| 02 | Propositions as types; `theorem`; `→` and `∧`; tactics `intro` `exact` `apply` `constructor` `obtain` | TPIL 3.1–3.3, 5.1–5.2 |
+| 03 | `∨`, `¬`, `False`, `↔`; tactics `left` `right` `rcases` `exfalso`; classical logic | TPIL 3.3–3.6, 5 |
+| 04 | Quantifiers `∀` `∃` and equality; tactics `rw` `use`; `calc` proofs | TPIL 4, 5 |
+| 05 | Natural numbers and proof by induction; `simp`, `omega`, `decide` | TPIL 7–8, 5 |
+| 06 | Defining your own mathematical objects: `structure`, `inductive`, classes | TPIL 7, 9–10 |
+| 07 | Setting up Mathlib; searching for lemmas (`exact?`, `apply?`, `rw?`); `ring`, `linarith` | MIL 1–2 |
+| 08 | Logic and sets in Mathlib: sets, functions, injective/surjective | MIL 3–4 |
+| 09 | Number theory: divisibility, primes, √2 is irrational | MIL 5 |
+| 10 | Formalizing a theorem of your choice from start to finish | — |
+
+Progress: ✅ Lesson 01 · ✅ Lesson 02
